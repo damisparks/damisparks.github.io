@@ -56,20 +56,6 @@ a:hover {
   overflow: hidden;
 }
 
-/* ---- narrow column is 30% and column-wide is 70% ------*/
-
-.narrow-column {
-  width: 30%;
-  float: left;
-}
-
-.wide-column {
-  width: 70%;
-  float: left;
-  min-height: 175px;
-  padding-left: 20px;
-}
-
 .uppercase {
   text-transform: uppercase;
 }
@@ -112,6 +98,7 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 1; /*-- this is to put the nav on an upper stack --*/
 }
 
 nav a {
@@ -160,4 +147,28 @@ footer {
 .contant-info, a {
   padding: 10px;
   display: inline-block;
+}
+
+/* Media Queries */
+@media (min-width : 900px) {
+  /* ---- narrow column is 30% and column-wide is 70% ------*/
+  .narrow-column {
+    width: 30%;
+    float: left;
+  }
+
+  .wide-column {
+    width: 70%;
+    float: left;
+    min-height: 175px;
+    padding-left: 20px;
+  }
+}
+@media (max-width :899px) {
+  header {
+    text-align: center;
+  }
+  .profile-img {
+    width: :200px;
+  }
 }
