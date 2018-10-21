@@ -56,6 +56,10 @@ a:hover {
   overflow: hidden;
 }
 
+.content-wrap h2:first-of-type {
+  margin-bottom: 0.5rem;
+}
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -153,12 +157,22 @@ footer {
 @media (min-width : 900px) {
   /* ---- narrow column is 30% and column-wide is 70% ------*/
   .narrow-column {
-    width: 30%;
+    width: 40%;
     float: left;
   }
 
+  .card {
+    box-shadow: 5px 5px 25px 0 rgba(46,61,73,.2);
+    margin: auto;
+    padding: 20px 20px;
+    overflow: hidden;
+    border-radius: .375rem;
+    transition: all .3s ease;
+    margin-bottom: 1.5rem;
+  }
+
   .wide-column {
-    width: 70%;
+    width: 60%;
     float: left;
     min-height: 175px;
     padding-left: 20px;
