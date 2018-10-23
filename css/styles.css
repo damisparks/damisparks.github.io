@@ -116,7 +116,7 @@ nav a {
 -------------------------*/
 
 .work {
-  background: #D5C6E0;
+  background: rgb(224, 226, 233);
 }
 
 h3~p {
@@ -144,7 +144,7 @@ p + h3 {
 /*footer style */
 
 footer {
-  background: #F5E6E8;
+  background: #edf9fd;
   text-align: center;
 }
 
@@ -169,6 +169,7 @@ footer {
     border-radius: .375rem;
     transition: all .3s ease;
     margin-bottom: 1.5rem;
+    background: #edf9fd;
   }
 
   .wide-column {
