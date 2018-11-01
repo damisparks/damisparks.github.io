@@ -127,6 +127,17 @@ h3~p {
   margin-top: 0;
 }
 
+.card {
+  box-shadow: 5px 5px 25px 0 rgba(46,61,73,.2);
+  margin: auto;
+  padding: 20px 20px;
+  overflow: hidden;
+  border-radius: .375rem;
+  transition: all .3s ease;
+  margin-bottom: 1.5rem;
+  background-color: rgba(63,70,173,0.15);
+}
+
 /* Education
 -------------------------*/
 
@@ -156,27 +167,28 @@ footer {
 /* Media Queries */
 @media (min-width : 900px) {
   /* ---- narrow column is 30% and column-wide is 70% ------*/
-  .narrow-column {
+  .narrow-column-header {
+    width: 30%;
+    float: left;
+  }
+  .role-at-work {
     width: 40%;
     float: left;
   }
 
-  .card {
-    box-shadow: 5px 5px 25px 0 rgba(46,61,73,.2);
-    margin: auto;
-    padding: 20px 20px;
-    overflow: hidden;
-    border-radius: .375rem;
-    transition: all .3s ease;
-    margin-bottom: 1.5rem;
-    background: #dfe3ee;
-  }
-
-  .wide-column {
+  .role-content-wide {
     width: 60%;
     float: left;
     min-height: 175px;
     padding-left: 20px;
+    
+  }
+  .wide-column-header {
+    width: 70%;
+    float: left;
+    min-height: 175px;
+    padding-left: 20px;
+    
   }
 }
 @media (max-width :899px) {
@@ -184,6 +196,6 @@ footer {
     text-align: center;
   }
   .profile-img {
-    width: :200px;
+    width: 200px;
   }
 }
