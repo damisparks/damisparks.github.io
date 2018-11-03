@@ -20,6 +20,8 @@ html {
 body {
   font-family: 'Open Sans', sans-serif;
   margin: 0;
+  background-color: #fff;
+  color: #11161a;
 }
 
 h1, h2 {
@@ -135,7 +137,8 @@ h3~p {
   border-radius: .375rem;
   transition: all .3s ease;
   margin-bottom: 1.5rem;
-  background-color: rgba(63,70,173,0.15);
+  background-color: #fff
+  color: #2e3d49
 }
 
 /* Education
