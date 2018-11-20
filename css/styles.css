@@ -1,10 +1,4 @@
 /* Global styles
-colour paletter for resume design
-#192A51 blue
-#967AA1
-#AAA1C8
-#D5C6E0
-#F5E6E8
 -------------------------*/
 /* apply a natural box layout model to all elements, but allowing components to change */
 
@@ -43,7 +37,19 @@ h3 {
 }
 
 a {
-  color: blue;
+  /* color: blue; */
+  color: #17D4FE;
+}
+
+/* Running clock styling. */
+.the-clock {
+  color: whitesmoke;
+  display: inline-block;
+  padding: 15px 20px;
+  letter-spacing: 7px;
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  font-size:30px;
 }
 
 a:hover {
@@ -109,7 +115,7 @@ header {
   font-size:20px;
   line-height: 60px;
   text-align: center;
-  background: hsl(0, 0%, 94%);
+  background: black;
   padding-bottom: 80px;
   top: 0;
   width: 100%;
