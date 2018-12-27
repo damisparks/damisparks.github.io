@@ -169,6 +169,46 @@ h3~p {
   color: #2e3d49;
 }
 
+/* holding the effect of the box before. */
+/* .card {
+  box-shadow: 1px 3px 5px 0 rgba(46,61,73,.2);
+  margin: auto;
+  padding: 20px 20px;
+  overflow: hidden;
+  border-radius: .375rem;
+  transition: all .3s ease;
+  margin-bottom: 1.5rem;
+  background-color: #fff;
+  color: #2e3d49;
+} */
+
+/* Holding the effect of the box after. */
+
+/* .card::after {
+  box-shadow: 5px 10px 20px 0 rgba(46,61,73,.2);
+  margin: auto;
+  padding: 20px 20px;
+  overflow: hidden;
+  border-radius: .375rem;
+  transition: all .3s ease ease-in-out;
+  margin-bottom: 1.5rem;
+  background-color: #fff;
+  color: #2e3d49;
+} */
+
+
+/* Scale up the box */
+/* .card:hover {
+  transform: scale(1.25, 1.25);
+  -webkit-transform: scale(1.25, 1.25);
+} */
+
+/* Fade in the pseudo-element with the bigger shadow */
+/* .card:hover::after {
+  opacity: 1;
+} */
+
+
 /* Education
 -------------------------*/
 
