@@ -158,45 +158,18 @@ h3~p {
 }
 
 .card {
-  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.3);
   margin: auto;
   padding: 20px 20px;
   overflow: hidden;
   border-radius: .375rem;
-  transition: all .3s ease;
   margin-bottom: 1.5rem;
-  background-color: #fff;
-  color: #2e3d49;
+  transition: all .3s ease ease-in-out;
   -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-}
-
-/* holding the effect of the box before.
-This was the first version of the css of the box.
-*/
-/* .card {
-  box-shadow: 1px 3px 5px 0 rgba(46,61,73,.2);
-  margin: auto;
-  padding: 20px 20px;
-  overflow: hidden;
-  border-radius: .375rem;
-  transition: all .3s ease;
-  margin-bottom: 1.5rem;
   background-color: #fff;
   color: #2e3d49;
-} */
-
-/* Holding the effect of the box after. */
-
-/* .card::after {
-  box-shadow: 5px 10px 20px 0 rgba(0,0,0,.3);
-  margin: auto;
-  padding: 20px 20px;
-  overflow: hidden;
-  border-radius: .375rem;
-  transition: all .3s ease ease-in-out;
- opacity: 0;
-} */
+}
 
 
 /* Scale up the box */
@@ -204,14 +177,8 @@ This was the first version of the css of the box.
   transform: scale(1.1, 1.1);
   -webkit-transform: scale(1.1, 1.1);
   border-radius: 5px;
-  box-shadow: 0px 10px 20px 0 rgba(0,0,0,.3);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.5);
 }
-
-/* Fade in the pseudo-element with the bigger shadow
-.card:hover::after {
-  opacity: 1;
-} */
-
 
 /* Education
 -------------------------*/
