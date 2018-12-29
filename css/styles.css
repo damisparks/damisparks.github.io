@@ -43,7 +43,7 @@ a {
 
 /* Running clock styling. */
 .the-clock {
-  color: whitesmoke;
+  color: #192A51;
   display: inline-block;
   padding: 15px 20px;
   letter-spacing: 7px;
@@ -115,11 +115,16 @@ header {
   font-size:20px;
   line-height: 60px;
   text-align: center;
-  background: black;
+  background: #fff;
   padding-bottom: 80px;
   top: 0;
   width: 100%;
   z-index: 3; /*-- this is to put the nav on an upper stack --*/
+  box-shadow: 0 1px 10px 1px rgba(0,0,0,0.1);
+}
+
+#nav , a{
+  color: #525c65;
 }
 
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
@@ -174,8 +179,6 @@ h3~p {
 
 /* Scale up the box */
 .card:hover {
-  transform: scale(1.1, 1.1);
-  -webkit-transform: scale(1.1, 1.1);
   border-radius: 5px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.5);
 }
