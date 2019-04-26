@@ -61,7 +61,7 @@ a:hover {
 }
 
 .card {
-  border-left: 4px solid #192a51 !important;
+  border-left: 4px solid #192a51;
 }
 
 .content-wrap {
