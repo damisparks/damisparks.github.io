@@ -60,6 +60,10 @@ a:hover {
   text-decoration: none;
 }
 
+.card {
+  border-left: 4px solid #192a51 !important;
+}
+
 .content-wrap {
   max-width: 950px;
   margin: auto;
