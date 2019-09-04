@@ -14,13 +14,13 @@
     </v-navigation-drawer>
     <v-app-bar :clipped-left="clipped" fixed app>
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
-      <v-btn icon @click.stop="miniVariant = !miniVariant">
-        <v-icon>mdi-{{ `chevron-${miniVariant ? 'right' : 'left'}` }}</v-icon>
-      </v-btn>
-      <v-btn icon @click.stop="clipped = !clipped">
-        <v-icon>mdi-application</v-icon>
-      </v-btn>
       <v-toolbar-title v-text="title" />
+      <v-spacer />
+      <v-toolbar-items>
+        <v-btn to="/" text>Home</v-btn>
+        <v-btn :to="{name : 'about'}" text>About Me</v-btn>
+        <!-- <v-btn text>My Collections</v-btn> -->
+      </v-toolbar-items>
       <v-spacer />
     </v-app-bar>
     <v-content>
@@ -35,28 +35,33 @@
 </template>
 
 <script>
+import { EventBus } from '../event-bus'
 export default {
-  data() {
-    return {
-      clipped: false,
-      drawer: false,
-      fixed: false,
-      items: [
-        {
-          icon: 'mdi-apps',
-          title: 'Welcome',
-          to: '/'
-        },
-        {
-          icon: 'mdi-chart-bubble',
-          title: 'About Me',
-          to: '/about'
-        }
-      ],
-      miniVariant: false,
-      right: true,
-      title: 'Dami Omifare'
-    }
-  }
+  props: {},
+  data: () => ({
+    clipped: false,
+    drawer: false,
+    fixed: false,
+    items: [
+      {
+        icon: 'mdi-apps',
+        title: 'Welcome',
+        to: '/'
+      },
+      {
+        icon: 'mdi-chart-bubble',
+        title: 'About Me',
+        to: '/about'
+      }
+      // {
+      //   icon: '',
+      //   title: 'My Collections',
+      //   to: '/my_collections'
+      // }
+    ],
+    miniVariant: false,
+    right: true,
+    title: 'Dami Omifare'
+  })
 }
 </script>
