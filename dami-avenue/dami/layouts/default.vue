@@ -19,7 +19,7 @@
       <v-toolbar-items>
         <v-btn to="/" text>Home</v-btn>
         <v-btn :to="{name : 'about'}" text>About Me</v-btn>
-        <!-- <v-btn text>My Collections</v-btn> -->
+        <v-btn :to="{name : 'collection'}" text>My Collection</v-btn>
       </v-toolbar-items>
       <v-spacer />
     </v-app-bar>
@@ -52,12 +52,12 @@ export default {
         icon: 'mdi-chart-bubble',
         title: 'About Me',
         to: '/about'
+      },
+      {
+        icon: 'mdi-file-document-box-multiple',
+        title: 'My Collections',
+        to: '/collection'
       }
-      // {
-      //   icon: '',
-      //   title: 'My Collections',
-      //   to: '/my_collections'
-      // }
     ],
     miniVariant: false,
     right: true,
