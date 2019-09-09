@@ -16,12 +16,12 @@
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
       <v-toolbar-title v-text="title" />
       <v-spacer />
-      <v-toolbar-items>
-        <v-btn to="/" text>Home</v-btn>
-        <v-btn :to="{name : 'about'}" text>About Me</v-btn>
-        <v-btn :to="{name : 'collection'}" text>My Collection</v-btn>
+      <v-toolbar-items class="mr-10">
+        <v-btn small class="mr-2" to="/" text>Home</v-btn>
+        <v-btn small class="mr-2" :to="{name : 'about'}" text>About Me</v-btn>
+        <v-btn small class="mr-2" :to="{name : 'collection'}" text>My Collection</v-btn>
+        <v-btn small class="mr-2" :to="{name : 'contactme'}" text>Contact Me</v-btn>
       </v-toolbar-items>
-      <v-spacer />
     </v-app-bar>
     <v-content>
       <v-container>
@@ -29,7 +29,7 @@
       </v-container>
     </v-content>
     <v-footer :fixed="fixed" app>
-      <span>&copy; 2019 Made with 💖 by Dami Omifare</span>
+      <span>&copy; {{ new Date().getFullYear() }} Made with 💖 by Dami Omifare</span>
     </v-footer>
   </v-app>
 </template>
@@ -57,6 +57,11 @@ export default {
         icon: 'mdi-file-document-box-multiple',
         title: 'My Collections',
         to: '/collection'
+      },
+      {
+        icon: 'mdi-file-document-box-multiple',
+        title: 'Contact Me',
+        to: '/contact-me'
       }
     ],
     miniVariant: false,

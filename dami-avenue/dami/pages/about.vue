@@ -1,5 +1,5 @@
 <template>
-  <v-layout>
+  <div>
     <v-layout column justify-center align-center>
       <v-flex xs12 sm8 md6>
         <v-card-title class="headline">About Me</v-card-title>
@@ -8,7 +8,6 @@
             height="100%"
             src="https://images.unsplash.com/photo-1499346146792-b008e446261f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
           >
-            <!-- <v-img height="100%" src="https://cdn.vuetifyjs.com/images/cards/server-room.jpg"> -->
             <v-row align="end" class="fill-height">
               <v-col align-self="start" class="pa-0 mx-8 mt-2" cols="12">
                 <v-avatar class="profile" color="grey" size="164">
@@ -35,7 +34,7 @@
         </v-card>
       </v-flex>
     </v-layout>
-  </v-layout>
+  </div>
 </template>
 
 
