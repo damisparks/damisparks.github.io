@@ -1,0 +1,28 @@
+{
+  "name": "dami",
+  "version": "1.0.0",
+  "description": "A driven self-taught developer, Algorithmist &amp; Machine Learning Engineer developing intelligent applications. I use machine learning and artificial intelligence to solve business complex challenges. With over 3 years of learning and experience at tech startups, tech giants bring insightful creativity. Entrepreneurial mind with zealous perspective for innovation. ",
+  "author": "Damilola Omifare",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
+  },
+  "dependencies": {
+    "nuxt": "^2.0.0",
+    "@nuxtjs/bulma": "^1.2.1"
+  },
+  "devDependencies": {
+    "@nuxtjs/eslint-config": "^1.0.1",
+    "@nuxtjs/eslint-module": "^1.0.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^6.1.0",
+    "eslint-plugin-nuxt": ">=0.4.2",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "prettier": "^1.16.4"
+  }
+}
