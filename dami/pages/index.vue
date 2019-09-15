@@ -1,45 +1,23 @@
 <template>
   <div class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        dami
-      </h1>
-      <h2 class="subtitle">
-        A driven self-taught developer, Algorithmist &amp; Machine Learning
-        Engineer developing intelligent applications. I use machine learning and
-        artificial intelligence to solve business complex challenges. With over
-        3 years of learning and experience at tech startups, tech giants bring
-        insightful creativity. Entrepreneurial mind with zealous perspective for
-        innovation.
-      </h2>
-      <div class="links">
-        <a href="https://nuxtjs.org/" target="_blank" class="button--green">
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >
-          GitHub
-        </a>
+    <div class="hero is-fullheight">
+      <div class="container">
+        <h2 class="subtitle">{{ whatIdo }}</h2>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-
 export default {
-  components: {
-    Logo
-  }
+  data: () => ({
+    whatIdo: `Damilola is a self-taught developer inspired by using technology to
+          solve complex problem`
+  })
 }
 </script>
 
-<style>
+<style scoped>
 .container {
   margin: 0 auto;
   min-height: 100vh;
@@ -60,14 +38,12 @@ export default {
 }
 
 .subtitle {
+  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   font-weight: 300;
   font-size: 42px;
   color: #526488;
   word-spacing: 5px;
   padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
 }
 </style>

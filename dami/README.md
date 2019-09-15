@@ -1,6 +1,6 @@
 # dami
 
-> A driven self-taught developer, Algorithmist &amp; Machine Learning Engineer developing intelligent applications. I use machine learning and artificial intelligence to solve business complex challenges. With over 3 years of learning and experience at tech startups, tech giants bring insightful creativity. Entrepreneurial mind with zealous perspective for innovation. 
+> Damilola is a self-taught developer inspired by using technology to
 
 ## Build Setup
 

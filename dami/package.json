@@ -1,8 +1,8 @@
 {
   "name": "dami",
   "version": "1.0.0",
-  "description": "A driven self-taught developer, Algorithmist &amp; Machine Learning Engineer developing intelligent applications. I use machine learning and artificial intelligence to solve business complex challenges. With over 3 years of learning and experience at tech startups, tech giants bring insightful creativity. Entrepreneurial mind with zealous perspective for innovation. ",
-  "author": "Damilola Omifare",
+  "description": "Damilola is a self-taught developer inspired by using technology to",
+  "author": "Dami Omifare",
   "private": true,
   "scripts": {
     "dev": "nuxt",
