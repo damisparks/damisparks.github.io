@@ -2,22 +2,25 @@
   <div>
     <navbar />
     <nuxt />
+    <footer-nav />
   </div>
 </template>
 
 <script>
 import Navbar from '@/components/Navbar.vue'
+import FooterNav from '@/components/FooterNav.vue'
 
 export default {
   components: {
-    Navbar
+    Navbar,
+    FooterNav
   }
 }
 </script>
 
 <style>
 html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+  font-family: Source Sans Pro, -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, 'Helvetica Neue', Arial, sans-serif;
   font-size: 16px;
   word-spacing: 1px;
@@ -62,5 +65,14 @@ html {
 .button--grey:hover {
   color: #fff;
   background-color: #35495e;
+}
+
+h1 {
+  font-weight: 400;
+  letter-spacing: 0.011em;
+  font-size: 21px;
+  font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial,
+    sans-serif;
+  color: #494949;
 }
 </style>

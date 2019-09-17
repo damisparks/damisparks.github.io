@@ -1,12 +1,10 @@
 <template>
   <div>
-    <header class="is-white is-bold top-navigation">
-      <nav class="navbar is-fixed-top top-navigation">
+    <header class="is-bold is- top-navigation">
+      <nav class="navbar is-fixed-top is-dark top-navigation">
         <div class="container">
           <div class="navbar-brand">
-            <nuxt-link
-              class="navbar-item has-text-weight-bold has-text-black"
-              to="/"
+            <nuxt-link class="navbar-item has-text-weight-bold" to="/"
               >Damilola Omifare</nuxt-link
             >
             <div
@@ -59,17 +57,12 @@ export default {
 
 <style scoped>
 .top-navigation {
-  background: #fff;
   background-color: #fff;
-  color: #1f2836;
+  background: rgba(45, 45, 45, 0.98);
   line-height: initial;
   min-height: 54px;
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
   z-index: 1020;
   margin-bottom: 1.75rem;
-}
-
-.navbar-item {
-  color: #4a4a4a !important;
 }
 </style>
