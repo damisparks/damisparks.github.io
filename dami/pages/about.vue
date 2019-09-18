@@ -17,49 +17,30 @@
     <section class="hero is-medium is-white">
       <div class="hero-body">
         <div class="container">
-          <!-- Card stays here :  -->
           <div class="container">
             <div class="card">
-              <div class="card-content">
-                <div class="media">
-                  <div class="media-left">
-                    <figure class="image">
-                      <img
-                        src="https://bulma.io/images/placeholders/96x96.png"
-                        alt="Damilola Omifare"
-                        me
-                      />
-                    </figure>
-                  </div>
-                  <div class="media-content ml4">
-                    <div class="content">
-                      <p class="title is-4">Damilola Omifare</p>
-                      <span class="left-align">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Phasellus nec iaculis mauris. Phasellus nec iaculis
-                        mauris. Phasellus nec iaculis mauris. Phasellus nec
-                        iaculis mauris. Phasellus nec iaculis mauris. Phasellus
-                        nec iaculis mauris. Phasellus nec iaculis mauris.
-                        Phasellus nec iaculis mauris.
-                      </span>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- <div class="content">
+              <figure class="card-image">
+                <img
+                  height="100"
+                  width="100"
+                  me
+                  src="https://avatars1.githubusercontent.com/u/28821368?s=460&v=4"
+                  alt="damilola dmifare"
+                />
+              </figure>
+              <p>
+                <span class="title is-4">Damilola Omifare</span>
+                <br />
+                <em>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Phasellus nec iaculis mauris.
-                  <a>@bulmaio</a>.
-                  <a href="#">#css</a>
-                  <a href="#">#responsive</a>
-                  <br />
-                  <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-                </div>-->
-              </div>
+                  Phasellus nec iaculis mauris. Phasellus nec iaculis mauris.
+                  Phasellus nec iaculis mauris. Phasellus nec iaculis mauris.
+                  Phasellus nec iaculis mauris. Phasellus nec iaculis mauris.
+                  Phasellus nec iaculis mauris. Phasellus nec iaculis mauris.
+                </em>
+              </p>
             </div>
           </div>
-
-          <!-- Card stays here :  -->
         </div>
       </div>
     </section>
@@ -75,26 +56,35 @@ export default {
 </script>
 
 <style scoped>
-/* * {
-  border: 1px solid blue !important;
-} */
-
-.card {
-  margin: auto;
-  max-width: 42rem;
+* {
+  border: border-box;
 }
 
-.image {
-  height: 100px;
-  width: 100px;
+.card {
+  padding-top: 0.6rem;
+  min-height: 200px;
+  max-width: 42rem;
+  letter-spacing: 1px;
 }
 
 [me] {
   border-radius: 50% 50%;
   -webkit-box-shadow: 0 0 0 1px #000;
   box-shadow: 0 0 0 1px #000;
-  float: left;
   margin: 10px 30px 30px 10px;
   opacity: 0.7;
+}
+
+p {
+  margin-top: 0.6rem;
+}
+.card-image {
+  float: left;
+}
+
+@media screen and (max-width: 1200px) {
+  .card {
+    width: calc(90vw - 8vmin);
+  }
 }
 </style>

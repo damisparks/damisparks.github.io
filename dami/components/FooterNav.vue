@@ -8,7 +8,7 @@
         </p>
       </div>
       <div class="social-connections">
-        <!-- the links -->
+        <!-- the links are going to be here. -->
       </div>
     </footer>
   </div>
