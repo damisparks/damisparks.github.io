@@ -4,9 +4,9 @@
       <nav class="navbar is-fixed-top is-dark top-navigation">
         <div class="container">
           <div class="navbar-brand">
-            <nuxt-link class="navbar-item has-text-weight-bold" to="/"
-              >Damilola Omifare</nuxt-link
-            >
+            <nuxt-link class="navbar-item has-text-weight-bold" to="/">
+              {{ myname }}
+            </nuxt-link>
             <div
               class="navbar-burger"
               :class="{ 'is-active': showNav }"
@@ -41,6 +41,7 @@
 export default {
   data: () => ({
     showNav: false,
+    myname: 'Damilola Omifare',
     items: [
       {
         title: 'About Me',

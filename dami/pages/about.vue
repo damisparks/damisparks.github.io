@@ -16,31 +16,8 @@
     </section>
     <section class="hero is-medium is-white">
       <div class="hero-body">
-        <div class="container">
-          <div class="container">
-            <div class="card">
-              <figure class="card-image">
-                <img
-                  height="100"
-                  width="100"
-                  me
-                  src="https://avatars1.githubusercontent.com/u/28821368?s=460&v=4"
-                  alt="damilola dmifare"
-                />
-              </figure>
-              <p>
-                <span class="title is-4">Damilola Omifare</span>
-                <br />
-                <em>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Phasellus nec iaculis mauris. Phasellus nec iaculis mauris.
-                  Phasellus nec iaculis mauris. Phasellus nec iaculis mauris.
-                  Phasellus nec iaculis mauris. Phasellus nec iaculis mauris.
-                  Phasellus nec iaculis mauris. Phasellus nec iaculis mauris.
-                </em>
-              </p>
-            </div>
-          </div>
+        <div class="container about-me-holder">
+          <profile-card />
         </div>
       </div>
     </section>
@@ -48,9 +25,14 @@
 </template>
 
 <script>
+import ProfileCard from '@/components/ProfileCard.vue'
 export default {
+  components: {
+    ProfileCard
+  },
   data: () => ({
-    ican: `If you tell me i can't do it, i will embarass you`
+    ican: `If you tell me i can't do it, i will embarass you`,
+    myInformation: `Damilola is a self-taught developer who is ....`
   })
 }
 </script>
@@ -60,31 +42,8 @@ export default {
   border: border-box;
 }
 
-.card {
-  padding-top: 0.6rem;
-  min-height: 200px;
-  max-width: 42rem;
-  letter-spacing: 1px;
-}
-
-[me] {
-  border-radius: 50% 50%;
-  -webkit-box-shadow: 0 0 0 1px #000;
-  box-shadow: 0 0 0 1px #000;
-  margin: 10px 30px 30px 10px;
-  opacity: 0.7;
-}
-
-p {
-  margin-top: 0.6rem;
-}
-.card-image {
-  float: left;
-}
-
-@media screen and (max-width: 1200px) {
-  .card {
-    width: calc(90vw - 8vmin);
-  }
+.about-me-holder {
+  display: flex;
+  justify-content: center;
 }
 </style>
