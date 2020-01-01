@@ -1,4 +1,6 @@
-    // When the user scrolls the page, this function executed 
+document.getElementById("year").textContent = year
+document.getElementById("year").innerText = date
+// When the user scrolls the page, this function executed 
     window.onscroll = function() {afterScrolling()};
     
     // Get the navbar
