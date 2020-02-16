@@ -11,4 +11,4 @@ The project is divided into :
   * `LICENSE`
   * `damilola.pdf`
   
-_You can use the same template for your project or improve it._ 
+_Free to use or just adapt it._ 
