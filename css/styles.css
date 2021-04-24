@@ -3,7 +3,9 @@
 /* apply a natural box layout model to all elements, but allowing components to change */
 
 html {
+  font-family: 'Open Sans', sans-serif;
   box-sizing: border-box;
+  background: #e2e8f0;
 }
 
 *,
@@ -13,30 +15,36 @@ html {
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   margin: 0;
   height: 100%;
   width: 100%;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+  margin-top: 0;
 }
 
 h1,
 h2 {
-  font-family: "Lora", serif;
-  font-weight: 400;
-  margin: 0;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
 }
 
 h1 {
-  font-size: 60px;
-}
-
-h2 {
-  font-size: 20px;
-  margin-top: 0;
-}
-
-h3 {
-  margin: 0;
+  font-size: 1.75rem;
+  line-height: 36px;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
 
 a {
@@ -47,10 +55,9 @@ a {
 /* Running clock styling. */
 .the-clock {
   color: #192a51;
-  display: inline-block;
+  /* display: inline-block; */
   padding: 15px 20px;
   letter-spacing: 7px;
-  font-family: Arial, Helvetica, sans-serif;
   position: absolute;
   font-size: 30px;
 }
@@ -97,7 +104,7 @@ a:hover {
 }
 
 header {
-  background: #192a51;
+  background: #1a1938;
   color: #fff;
   /* padding-top: 50px; */
   position: relative;
@@ -167,7 +174,7 @@ nav a {
 
 .work {
   /* background-color: rgb(245, 245, 245);  */
-  background: linear-gradient(90deg, rgba(247, 247, 247, 0) 0, #edf9fd 100%),
+  background: linear-gradient(90deg, rgba(247, 247, 247, 0) 0, #e2e8f0 100%),
     linear-gradient(45deg, #f7f7f7 0, #eafaff 100%);
 }
 
@@ -203,13 +210,9 @@ h3 ~ p {
 -------------------------*/
 
 .education {
-  background: linear-gradient(
-      rgba(170, 161, 200, 0.8),
-      rgba(170, 161, 200, 0.5)
-    ),
-    url(https://images.unsplash.com/photo-1531674590200-f5e4c43f31de?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=44c88230f10a563c9dd67d6456dc1c35&auto=format&fit=crop&w=1650&q=80)
-      no-repeat fixed;
+  background: linear-gradient(90deg, #494867 14%,#1a1938);   
   background-size: cover;
+  color: #fff;
 }
 
 p + h3 {
@@ -260,5 +263,12 @@ a {
   }
   .profile-img {
     width: 200px;
+  }
+}
+
+@media screen and (min-width: 48rem) {
+  h2, h2 {
+    font-size: 2rem;
+    line-height: 36px;
   }
 }
